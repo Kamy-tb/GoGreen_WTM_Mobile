@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/gameFragment">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.conduitechangement.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_beforeAfter1Fragment"
+            app:destination="@id/beforeAfter1Fragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_treeFragment"
+            app:destination="@id/treeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donationFragment"
+        android:name="com.example.conduitechangement.DonationFragment"
+        android:label="fragment_donation"
+        tools:layout="@layout/fragment_donation" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.conduitechangement.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.conduitechangement.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/beforeAfter1Fragment"
+        android:name="com.example.conduitechangement.BeforeAfter1Fragment"
+        android:label="fragment_before_after1"
+        tools:layout="@layout/fragment_before_after1" >
+        <action
+            android:id="@+id/action_beforeAfter1Fragment_to_beforeAfter2Fragment"
+            app:destination="@id/beforeAfter2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beforeAfter2Fragment"
+        android:name="com.example.conduitechangement.BeforeAfter2Fragment"
+        android:label="fragment_before_after2"
+        tools:layout="@layout/fragment_before_after2" />
+    <fragment
+        android:id="@+id/treeFragment"
+        android:name="com.example.conduitechangement.TreeFragment"
+        android:label="fragment_tree"
+        tools:layout="@layout/fragment_tree" >
+        <action
+            android:id="@+id/action_treeFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/welcomeActivity"
+        android:name="com.example.conduitechangement.WelcomeActivity"
+        android:label="activity_welcome"
+        tools:layout="@layout/activity_welcome" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.conduitechangement.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/signupActivity"
+        android:name="com.example.conduitechangement.SignupActivity"
+        android:label="activity_signup"
+        tools:layout="@layout/activity_signup" />
+</navigation>

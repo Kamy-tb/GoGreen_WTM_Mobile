@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView2"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="15dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="1"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="#454545"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="yas_bel03"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:textColor="#454545"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="157809"
+        android:textStyle="bold"
+        android:textColor="#454545"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

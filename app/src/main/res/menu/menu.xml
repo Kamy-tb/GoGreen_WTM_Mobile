@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/gameFragment"
+        android:icon="@drawable/home"
+        android:title="Game"
+        />
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/global"
+        android:title="Feed"
+        />
+    <item
+        android:id="@+id/rankingFragment"
+        android:icon="@drawable/ranking"
+        android:title="Ranking"
+        />
+    <item
+        android:id="@+id/donationFragment"
+        android:icon="@drawable/basket"
+        android:title="Products"
+        />
+</menu>
